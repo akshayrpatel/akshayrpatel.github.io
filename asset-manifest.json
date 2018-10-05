@@ -1,13 +1,13 @@
 {
-  "main.css": "/akshayrpatel/akshayrpatel.github.io/static/css/main.54d24840.chunk.css",
-  "main.js": "/akshayrpatel/akshayrpatel.github.io/static/js/main.4665c391.chunk.js",
-  "main.js.map": "/akshayrpatel/akshayrpatel.github.io/static/js/main.4665c391.chunk.js.map",
-  "static/js/1.8bfb27a1.chunk.js": "/akshayrpatel/akshayrpatel.github.io/static/js/1.8bfb27a1.chunk.js",
-  "static/js/1.8bfb27a1.chunk.js.map": "/akshayrpatel/akshayrpatel.github.io/static/js/1.8bfb27a1.chunk.js.map",
-  "runtime~main.js": "/akshayrpatel/akshayrpatel.github.io/static/js/runtime~main.7ae59fb8.js",
-  "runtime~main.js.map": "/akshayrpatel/akshayrpatel.github.io/static/js/runtime~main.7ae59fb8.js.map",
-  "static/css/main.54d24840.chunk.css.map": "/akshayrpatel/akshayrpatel.github.io/static/css/main.54d24840.chunk.css.map",
-  "index.html": "/akshayrpatel/akshayrpatel.github.io/index.html",
-  "precache-manifest.759016dc17db5a016f91db3242167501.js": "/akshayrpatel/akshayrpatel.github.io/precache-manifest.759016dc17db5a016f91db3242167501.js",
-  "service-worker.js": "/akshayrpatel/akshayrpatel.github.io/service-worker.js"
+  "main.css": "/portfolio/static/css/main.54d24840.chunk.css",
+  "main.js": "/portfolio/static/js/main.24cae7e7.chunk.js",
+  "main.js.map": "/portfolio/static/js/main.24cae7e7.chunk.js.map",
+  "static/js/1.8bfb27a1.chunk.js": "/portfolio/static/js/1.8bfb27a1.chunk.js",
+  "static/js/1.8bfb27a1.chunk.js.map": "/portfolio/static/js/1.8bfb27a1.chunk.js.map",
+  "runtime~main.js": "/portfolio/static/js/runtime~main.ee2a1003.js",
+  "runtime~main.js.map": "/portfolio/static/js/runtime~main.ee2a1003.js.map",
+  "static/css/main.54d24840.chunk.css.map": "/portfolio/static/css/main.54d24840.chunk.css.map",
+  "index.html": "/portfolio/index.html",
+  "precache-manifest.b2c2ba50e265d9a4c375f73874f84d9c.js": "/portfolio/precache-manifest.b2c2ba50e265d9a4c375f73874f84d9c.js",
+  "service-worker.js": "/portfolio/service-worker.js"
 }
