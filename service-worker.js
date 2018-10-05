@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.2/workbox-sw.js");
 
 importScripts(
-  "/akshayrpatel/akshayrpatel.github.io/website/precache-manifest.597399b200516565edeb28436a4e8d6d.js"
+  "/akshayrpatel/akshayrpatel.github.io/precache-manifest.759016dc17db5a016f91db3242167501.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/akshayrpatel/akshayrpatel.github.io/website/index.html", {
+workbox.routing.registerNavigationRoute("/akshayrpatel/akshayrpatel.github.io/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
