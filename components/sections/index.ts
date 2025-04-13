@@ -1,15 +1,6 @@
-import AboutSection from './AboutSection';
-import ExperienceSection from './ExperienceSection';
-import ProjectSection from './ProjectSection';
-import SkillSection from './SkillSection';
-import EducationSection from './EducationSection';
-import ContactSection from './ContactSection';
+import LandingSection from "../home/LandingSection";
+import AboutSection from "../about/AboutSection";
+import SkillsSection from "../skills/SkillsSection";
+import ContactSection from "../contact/ContactSection";
 
-export {
-  AboutSection,
-  ExperienceSection,
-  ProjectSection,
-  SkillSection,
-  EducationSection,
-  ContactSection,
-};
+export { LandingSection, AboutSection, SkillsSection, ContactSection };

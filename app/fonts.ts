@@ -1,46 +1,91 @@
-import localFont from 'next/font/local';
+import localFont from "next/font/local";
+import { Outfit, Roboto_Mono, JetBrains_Mono } from "next/font/google";
 
-const googleSansBold = localFont({
-  src: '../public/fonts/google_sans/GoogleSans-Bold.ttf',
-  variable: '--font-google-sans-bold',
+const googleSans = localFont({
+	src: [
+		{
+			path: "../public/fonts/google_sans/GoogleSans-Regular.ttf",
+			weight: "400",
+			style: "normal",
+		},
+		{
+			path: "../public/fonts/google_sans/GoogleSans-Medium.ttf",
+			weight: "600",
+			style: "normal",
+		},
+		{
+			path: "../public/fonts/google_sans/GoogleSans-Bold.ttf",
+			weight: "700",
+			style: "normal",
+		},
+		{
+			path: "../public/fonts/google_sans/GoogleSans-Italic.ttf",
+			weight: "700",
+			style: "italic",
+		},
+	],
+	variable: "--font-google-sans",
 });
-const googleSansMedium = localFont({
-  src: '../public/fonts/google_sans/GoogleSans-Medium.ttf',
-  variable: '--font-google-sans-medium',
+
+const outfitSans = Outfit({
+	variable: "--font-outfit-sans",
+	subsets: ["latin"],
 });
-const googleSansRegular = localFont({
-  src: '../public/fonts/google_sans/GoogleSans-Regular.ttf',
-  variable: '--font-google-sans-regular',
-});
-const googleSansItalic = localFont({
-  src: '../public/fonts/google_sans/GoogleSans-Italic.ttf',
-  variable: '--font-google-sans-italic',
-});
+
 const jakartaSans = localFont({
-  src:
-    '../public/fonts/jakarta_sans/PlusJakartaSans-VariableFont.ttf',
-  variable: '--font-jakarta-sans-variable',
-});
-const outfitSans = localFont({
-  src: '../public/fonts/outfit_sans/Outfit-VariableFont.ttf',
-  variable: '--font-outfit-sans-variable',
-});
-const robotoMono = localFont({
-  src: '../public/fonts/roboto_mono/RobotoMono-VariableFont.ttf',
-  variable: '--font-roboto-mono-variable',
-});
-const jetbrainsMono = localFont({
-  src: '../public/fonts/jetbrains_mono/JetBrainsMono-VariableFont.ttf',
-  variable: '--font-jetbrains-mono-variable',
+	src: [
+		{
+			path: "../public/fonts/jakarta_sans/PlusJakartaSans-ExtraLight.ttf",
+			weight: "200",
+			style: "normal",
+		},
+		{
+			path: "../public/fonts/jakarta_sans/PlusJakartaSans-Light.ttf",
+			weight: "300",
+			style: "normal",
+		},
+		{
+			path: "../public/fonts/jakarta_sans/PlusJakartaSans-Regular.ttf",
+			weight: "400",
+			style: "normal",
+		},
+		{
+			path: "../public/fonts/jakarta_sans/PlusJakartaSans-Medium.ttf",
+			weight: "500",
+			style: "normal",
+		},
+		{
+			path: "../public/fonts/jakarta_sans/PlusJakartaSans-SemiBold.ttf",
+			weight: "600",
+			style: "normal",
+		},
+		{
+			path: "../public/fonts/jakarta_sans/PlusJakartaSans-Bold.ttf",
+			weight: "700",
+			style: "normal",
+		},
+		{
+			path: "../public/fonts/jakarta_sans/PlusJakartaSans-ExtraBold.ttf",
+			weight: "800",
+			style: "normal",
+		},
+		{
+			path: "../public/fonts/jakarta_sans/PlusJakartaSans-Italic.ttf",
+			weight: "400",
+			style: "italic",
+		},
+	],
+	variable: "--font-jakarta-sans",
 });
 
-export {
-  googleSansBold,
-  googleSansMedium,
-  googleSansRegular,
-  googleSansItalic,
-  jakartaSans,
-  outfitSans,
-  robotoMono,
-  jetbrainsMono
-};
+const robotoMono = Roboto_Mono({
+	variable: "--font-roboto-mono",
+	subsets: ["latin"],
+});
+
+const jetbrainsMono = JetBrains_Mono({
+	variable: "--font-jetbrains-mono",
+	subsets: ["latin"],
+});
+
+export { googleSans, outfitSans, jakartaSans, robotoMono, jetbrainsMono };

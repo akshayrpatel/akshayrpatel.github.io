@@ -1,26 +1,21 @@
-'use client';
-import { Landing, Navbar } from '@/components/main';
+"use client";
 import {
-  AboutSection,
-  ExperienceSection,
-  SkillSection,
-  ContactSection,
-  EducationSection,
-} from '@/components/sections';
+	LandingSection,
+	AboutSection,
+	SkillsSection,
+	ContactSection,
+} from "@/components/sections";
 
 const Home = () => {
-  return (
-    <main className="overflow-hidden">
-      <Navbar />
-      <Landing />
-      <AboutSection />
-      <ExperienceSection />
-      {/* <ProjectSection /> */}
-      <SkillSection />
-      <EducationSection />
-      <ContactSection />
-    </main>
-  );
+	return (
+		<main className="overflow-hidden">
+			{/* <Navbar /> */}
+			<LandingSection />
+			<AboutSection />
+			<SkillsSection />
+			<ContactSection />
+		</main>
+	);
 };
 
 export default Home;

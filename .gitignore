@@ -23,6 +23,7 @@
 # specific
 /components/sections/backup
 /components/todo.ts
+/components/trash
 
 # misc
 .DS_Store

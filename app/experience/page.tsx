@@ -1,5 +1,9 @@
-const Experience = () => {
-  return <div>Experience</div>;
+"use client";
+
+import { ExperiencePage } from "@/components/pages";
+
+const Page = () => {
+	return <ExperiencePage />;
 };
 
-export default Experience;
+export default Page;
