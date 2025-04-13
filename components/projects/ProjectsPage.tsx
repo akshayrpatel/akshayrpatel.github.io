@@ -23,7 +23,7 @@ const ProjectsPage = () => {
 	);
 
 	return (
-		<section className="w-full px-2 sm:px-4 py-8 sm:py-12 bg-gradient-to-br from-blue-50 via-sky-100 to-slate-100">
+		<section className="w-full min-h-screen px-2 sm:px-4 py-8 sm:py-12 bg-gradient-to-br from-blue-50 via-sky-100 to-slate-100">
 			{/* Title and Description */}
 			<div className="max-w-5xl mx-auto mb-8">
 				<h2 className="mb-3 text-3xl sm:text-4xl md:text-5xl text-center font-heading font-extrabold text-sky-800 ">
