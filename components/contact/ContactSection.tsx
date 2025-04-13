@@ -1,27 +1,4 @@
-import { FaLinkedinIn, FaEnvelope, FaGithub } from "react-icons/fa";
-import { motion } from "framer-motion";
 import Contacts from "./Contacts";
-
-const contacts = [
-	{
-		icon: FaLinkedinIn,
-		link: "https://www.linkedin.com/in/akshayrpatel/",
-		label: "LinkedIn",
-		color: "#0A66C2",
-	},
-	{
-		icon: FaEnvelope,
-		link: "mailto:akshayrpatel24@gmail.com",
-		label: "Email",
-		color: "#EA4335",
-	},
-	{
-		icon: FaGithub,
-		link: "https://github.com/akshayrpatel",
-		label: "GitHub",
-		color: "#171515",
-	},
-];
 
 const ContactSection = () => (
 	<section className="flex flex-col w-full py-20 px-6 items-center justify-center bg-gradient-to-br from-black via-gray-900 to-gray-800 ">
