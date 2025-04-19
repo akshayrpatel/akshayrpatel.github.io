@@ -19,9 +19,20 @@ import {
 	SiTailwindcss,
 	SiMongodb,
 	SiApachekafka,
-	SiIntellijidea,
+	SiBulma,
 } from "react-icons/si";
-import { VscVscode } from "react-icons/vsc";
+
+import {
+	SiPytorch,
+	SiTensorflow,
+	SiPandas,
+	SiHuggingface,
+	SiOllama,
+} from "react-icons/si";
+import { VscAzure } from "react-icons/vsc";
+import { DiGoogleCloudPlatform } from "react-icons/di";
+import { FaAws } from "react-icons/fa6";
+import { FaRobot } from "react-icons/fa"; // For Transformers, CrewAI, Ollama (as placeholders)
 
 const skillCategories = [
 	{
@@ -32,7 +43,7 @@ const skillCategories = [
 			{ name: "JavaScript", icon: FaJs, color: "text-yellow-400" },
 			{ name: "TypeScript", icon: SiTypescript, color: "text-blue-500" },
 			{ name: "C++", icon: SiCplusplus, color: "text-blue-700" },
-			{ name: "SQL", icon: BsFiletypeSql, color: "text-red-500" }, // No direct Matlab icon, using database as a generic
+			{ name: "SQL", icon: BsFiletypeSql, color: "text-red-500" },
 		],
 	},
 	{
@@ -49,6 +60,7 @@ const skillCategories = [
 				color: "text-black dark:text-white",
 			},
 			{ name: "Tailwind", icon: SiTailwindcss, color: "text-cyan-500" },
+			{ name: "Bulma", icon: SiBulma, color: "text-teal-500" },
 		],
 	},
 	{
@@ -59,8 +71,23 @@ const skillCategories = [
 			{ name: "Kafka", icon: SiApachekafka, color: "text-black" },
 			{ name: "Docker", icon: FaDocker, color: "text-blue-400" },
 			{ name: "Git", icon: FaGitAlt, color: "text-orange-400" },
-			{ name: "IntelliJ", icon: SiIntellijidea, color: "text-blue-900" },
-			{ name: "VS Code", icon: VscVscode, color: "text-blue-500" },
+			// { name: "IntelliJ", icon: SiIntellijidea, color: "text-blue-900" },
+			// { name: "VS Code", icon: VscVscode, color: "text-blue-500" },
+			{ name: "Azure", icon: VscAzure, color: "text-blue-700" },
+			{ name: "G Cloud", icon: DiGoogleCloudPlatform, color: "text-blue-400" },
+			{ name: "AWS", icon: FaAws, color: "text-yellow-500" },
+		],
+	},
+	{
+		title: "AI / ML",
+		skills: [
+			{ name: "PyTorch", icon: SiPytorch, color: "text-orange-500" },
+			{ name: "TensorFlow", icon: SiTensorflow, color: "text-yellow-500" },
+			{ name: "Pandas", icon: SiPandas, color: "text-black" },
+			{ name: "Ollama", icon: SiOllama, color: "text-green-700" }, // Placeholder
+			{ name: "CrewAI", icon: FaRobot, color: "text-blue-700" }, // Placeholder
+			{ name: "HuggingFace", icon: SiHuggingface, color: "text-yellow-400" },
+			{ name: "Transformers", icon: FaRobot, color: "text-purple-500" }, // Placeholder
 		],
 	},
 ];

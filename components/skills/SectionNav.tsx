@@ -38,7 +38,9 @@ const SectionNav: FC = () => {
 					key={title}
 					className={`group block rounded-2xl shadow-xl overflow-hidden border-2 border-slate-200 hover:border-slate-500 bg-white transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl ${tilt} cursor-pointer`}
 				>
-					<div className="relative pt-[80%]">{getSectionCardImage(image)}</div>
+					<div className="relative pt-[60%] md:pt-[80%]">
+						{getSectionCardImage(image)}
+					</div>
 
 					<div
 						className={`flex flex-col h-full gap-3 p-6 hover:text-slate-800 ${bg}`}

@@ -4,6 +4,7 @@ import {
 	AboutSection,
 	SkillsSection,
 	ContactSection,
+	Jarvis,
 } from "@/components/sections";
 
 const Home = () => {
@@ -11,6 +12,7 @@ const Home = () => {
 		<main className="overflow-hidden">
 			{/* <Navbar /> */}
 			<LandingSection />
+			<Jarvis />
 			<AboutSection />
 			<SkillsSection />
 			<ContactSection />

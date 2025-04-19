@@ -262,6 +262,16 @@ const yorkUCourses = [
 const certifications = [
 	{
 		type: "certification",
+		title: "Fine Tuning Large Language Models",
+		institution: "DeepLearning.AI",
+		year: "2024",
+		icon: FaCertificate,
+		color: "#f59e42",
+		description:
+			"How to adapt large language models (LLMs) to your specific needs by training them on your own data",
+	},
+	{
+		type: "certification",
 		title: "Multi AI Agent Systems",
 		institution: "DeepLearning.AI",
 		year: "2024",

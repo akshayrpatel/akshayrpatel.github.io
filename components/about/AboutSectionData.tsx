@@ -49,17 +49,18 @@ export const techInterests: TechInterest[] = [
 		color: "text-sky-600",
 		desc: "Designing cloud-native, distributed architectures for speed and reliability.",
 	},
-	{
-		icon: FaGithub,
-		label: "Open Source",
-		color: "text-gray-800",
-		desc: "Technology should be shared and improved upon collaboratively.",
-	},
+
 	{
 		icon: FaCogs,
 		label: "DevOps & Automation",
 		color: "text-orange-600",
 		desc: "Automating workflows, CI/CD, and infrastructure as code.",
+	},
+	{
+		icon: FaPuzzlePiece,
+		label: "Systems Thinking",
+		color: "text-purple-600",
+		desc: "Connecting the dots across domains to see the bigger picture.",
 	},
 	{
 		icon: FaPalette,
@@ -73,11 +74,12 @@ export const techInterests: TechInterest[] = [
 		color: "text-yellow-500",
 		desc: "Turning complex challenges into elegant, innovative solutions.",
 	},
+
 	{
-		icon: FaPuzzlePiece,
-		label: "Systems Thinking",
-		color: "text-purple-600",
-		desc: "Connecting the dots across domains to see the bigger picture.",
+		icon: FaGithub,
+		label: "Open Source",
+		color: "text-gray-800",
+		desc: "Technology should be shared and improved upon collaboratively.",
 	},
 ];
 
@@ -121,8 +123,11 @@ export const lifeInterests: LifeInterest[] = [
 ];
 
 export const typewriterWords: string[] = [
-	"Software Engineer.",
-	"AI Enthusiast.",
-	"Continuous Learner.",
-	"Building the future, one line at a time.",
+	// "Software Engineer.",
+	// "AI Enthusiast.",
+	// "Continuous Learner.",
+	"Engineering progress, bit by bit.",
+	"Transforming ideas into code.",
+	"Building future, one line at a time.",
+	"Turning vision into reality.",
 ];

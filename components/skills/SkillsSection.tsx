@@ -30,7 +30,7 @@ const SkillsSection: FC = () => {
 						here are the technologies I use to turn ideas into reality.
 					</p>
 					<div className="overflow-x-auto">
-						<div className="grid grid-cols-3 min-w-xs md:grid-cols-3 gap-6 sm:gap-8">
+						<div className="grid grid-cols-2 min-w-xs md:grid-cols-4 gap-6 sm:gap-8">
 							{skillCategories.map((cat) => (
 								<div key={cat.title}>
 									<h4 className="mb-2 text-md sm:text-xl text-center font-subheading font-semibold text-slate-700">

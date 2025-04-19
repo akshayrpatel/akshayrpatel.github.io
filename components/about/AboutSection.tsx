@@ -7,7 +7,7 @@ import {
 } from "./AboutSectionData";
 
 const AboutSection: FC = () => (
-	<section className="flex w-full min-h-screen py-32 px-2 sm:px-4 md:px-8 items-center bg-gradient-to-br from-blue-50 via-sky-100 to-slate-100">
+	<section className="flex w-full py-32 px-2 sm:px-4 md:px-8 items-center bg-gradient-to-br from-blue-50 via-sky-100 to-slate-100">
 		<div className="flex flex-col max-w-3xl mx-auto w-full gap-10 animate__animated animate__fadeIn">
 			<div>
 				<p className="mb-3 text-3xl sm:text-4xl md:text-5xl 2xl:text-6xl font-heading font-black text-center">

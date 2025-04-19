@@ -45,9 +45,9 @@ const Contacts: FC = () => (
 				className="flex flex-col items-center group animate__animated animate__fadeIn"
 			>
 				<span
-					className={`flex size-12 md:size-16 items-center justify-center rounded-full border border-slate-200 transition ${color} ${bg}`}
+					className={`flex size-12 md:size-16 items-center justify-center rounded-full border border-slate-200 transition ${color} ${bg} group-hover:scale-110 group-hover:shadow-lg`}
 				>
-					<Icon className="text-[1.5rem] md:text-[2rem]" />
+					<Icon className={`text-[1.5rem] md:text-[2rem] duration-200 `} />
 				</span>
 			</a>
 		))}

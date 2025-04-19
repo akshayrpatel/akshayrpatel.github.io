@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://akshayrpatel.github.io/",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 4000",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -20,6 +20,7 @@
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@next/third-parties": "^15.1.7",
     "animate.css": "^4.1.1",
+    "framer-motion": "^12.12.1",
     "next": "^15.1.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

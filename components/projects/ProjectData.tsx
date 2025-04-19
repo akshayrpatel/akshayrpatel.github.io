@@ -28,8 +28,16 @@ const projects = [
 		category: "Web App",
 	},
 	{
+		name: "Jarvis",
+		image: "/images/projects/jarvis-brain.png",
+		description:
+			"Currently training a large language model to be able to answer questions pertaining to myself!",
+		technologies: ["Python", "Ollama", "HuggingFace"],
+		category: "AI/ML",
+	},
+	{
 		name: "Resume.AI",
-		image: "/images/projects/work.png",
+		image: "/images/projects/resume-ai.png",
 		description:
 			"Developing a multi-agent AI system that streamlines job applications for engineers, featuring AI-driven resume optimization, automated cover letter generation, and personalized interview preparation.",
 		technologies: ["Python", "Gemini", "Spring", "React"],
@@ -63,7 +71,7 @@ const projects = [
 	},
 	{
 		name: "YU Assist",
-		image: "/images/projects/work.png",
+		image: "/images/projects/yu-assist.png",
 		description:
 			"An app on the google assistant to help York University students find information like GPA, courses enrolled, etc. quickly using voice-recognition.",
 		technologies: ["Node.js", "Firebase", "Javascript", "Dialogflow"],

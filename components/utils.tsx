@@ -24,8 +24,12 @@ import {
 	SiIntellijidea,
 	SiApachetomcat,
 	SiEclipseide,
+	SiPytorch,
+	SiOllama,
+	SiHuggingface,
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
+import { FaRobot } from "react-icons/fa";
 import { IoLogoFirebase } from "react-icons/io5";
 import { useRouter } from "next/navigation";
 
@@ -56,11 +60,16 @@ const skills = [
 	{ name: "IntelliJ", icon: SiIntellijidea, color: "text-blue-900" },
 	{ name: "VS Code", icon: VscVscode, color: "text-blue-500" },
 
-	{ name: "Gemini", icon: RiGeminiFill, color: "text-pink-300" },
 	{ name: "Tomcat", icon: SiApachetomcat, color: "text-yellow-500" },
 	{ name: "Eclipse", icon: SiEclipseide, color: "text-purple-800" },
 	{ name: "Firebase", icon: IoLogoFirebase, color: "text-yellow-400" },
 	{ name: "Twitter", icon: FaTwitter, color: "text-sky-400" },
+
+	{ name: "Gemini", icon: RiGeminiFill, color: "text-pink-300" },
+	{ name: "PyTorch", icon: SiPytorch, color: "text-orange-500" },
+	{ name: "Ollama", icon: SiOllama, color: "text-green-700" },
+	{ name: "HuggingFace", icon: SiHuggingface, color: "text-yellow-400" },
+	{ name: "Transformers", icon: FaRobot, color: "text-purple-500" },
 ];
 
 // This function is only used to prefix asset paths with repository name
