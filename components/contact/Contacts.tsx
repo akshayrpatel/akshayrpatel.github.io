@@ -35,7 +35,7 @@ const contacts: Contact[] = [
 ];
 
 const Contacts: FC = () => (
-	<div className="flex flex-wrap mt-6 gap-8 justify-center">
+	<div className="flex flex-wrap gap-8 justify-center">
 		{contacts.map(({ icon: Icon, link, color, bg }, i) => (
 			<a
 				key={i}
