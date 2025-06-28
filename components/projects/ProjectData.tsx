@@ -86,6 +86,16 @@ const projects = [
 		technologies: ["Twitter", "Python", "HDFS"],
 		category: "AI/ML",
 	},
+	{
+		name: "Memory Swipe",
+		image: "/images/projects/memory-swipe.png",
+		description:
+			"A simple card swipe memory game built end-to-end completely using prompts with bolt.new",
+		technologies: ["Bolt.new", "React", "TypeScript", "Tailwind"],
+		github: "https://github.com/akshayrpatel/swipe",
+		live: "https://benevolent-malasada-a5c914.netlify.app/",
+		category: "Games",
+	},
 ];
 
 const categories = [
