@@ -96,6 +96,16 @@ const projects = [
 		live: "https://benevolent-malasada-a5c914.netlify.app/",
 		category: "Games",
 	},
+	{
+		name: "Pair it!",
+		image: "/images/projects/pair-it.png",
+		description:
+			"A simple card pairing game built end-to-end completely using prompts with bolt.new",
+		technologies: ["Bolt.new", "React", "TypeScript", "Tailwind"],
+		github: "https://github.com/akshayrpatel/pair-it",
+		live: "https://transcendent-stroopwafel-e65893.netlify.app/",
+		category: "Games",
+	},
 ];
 
 const categories = [
