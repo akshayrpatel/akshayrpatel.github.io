@@ -78,6 +78,7 @@ const Jarvis: FC = () => {
 	const checkLimit = async () => {
 		try {
 			const limit_api_url = process.env.NEXT_PUBLIC_JARVIS_API_URL_LIMIT || "";
+			console.log(limit_api_url);
 			const res = await fetch(limit_api_url);
 			const info = await res.json();
 			if (info && info.limit !== null && info.usage >= info.limit) {
@@ -86,7 +87,7 @@ const Jarvis: FC = () => {
 				return true;
 			}
 		} catch (e) {
-			console.log("Failed to check api limie: ", e);
+			console.log("Failed to check api limit: ", e);
 			return false;
 		}
 	};
