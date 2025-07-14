@@ -1,6 +1,7 @@
+import { FC } from "react";
 import Contacts from "./Contacts";
 
-const ContactSection = () => (
+const ContactSection: FC = () => (
 	<section className="flex flex-col w-full py-20 px-6 items-center justify-center bg-gradient-to-br from-black via-gray-900 to-gray-800 ">
 		<h2 className="mb-6 text-4xl sm:text-5xl text-center font-heading font-black text-white">
 			Let’s Connect

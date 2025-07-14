@@ -1,33 +1,7 @@
 import Link from "next/link";
 import { FC } from "react";
 import { getSectionCardImage } from "../utils";
-
-const cards = [
-	{
-		image: "/images/tech/experience.png",
-		title: "Experience",
-		desc: "Explore my professional journey across diverse teams and roles, building products and solving real-world challenges.",
-		href: "/experience",
-		bg: "bg-gradient-to-br from-slate-100 via-slate-200 to-slate-300",
-		tilt: "-rotate-3",
-	},
-	{
-		image: "/images/tech/projects.png",
-		title: "Projects",
-		desc: "Dive into real-world applications and creative builds. My projects span AI, web apps, automation, and more.",
-		href: "/projects",
-		bg: "bg-gradient-to-br from-blue-50 via-sky-100 to-slate-100",
-		tilt: "rotate-2",
-	},
-	{
-		image: "/images/tech/education.png",
-		title: "Education",
-		desc: "My academic foundation and ongoing certifications power my growth and adaptability in tech.",
-		href: "/education",
-		bg: "bg-gradient-to-br from-[#f3f1fc] via-[#f9f8fe] to-[#eae8fd]",
-		tilt: "-rotate-2",
-	},
-];
+import { cards } from "@/data";
 
 const SectionNav: FC = () => {
 	return (

@@ -1,9 +1,11 @@
 import type { Config } from "tailwindcss";
+import typography from "@tailwindcss/typography";
 
 export default {
 	content: [
 		"./pages/**/*.{js,ts,jsx,tsx,mdx}",
 		"./components/**/*.{js,ts,jsx,tsx,mdx}",
+		"./data/*.{js,ts}",
 		"./app/**/*.{js,ts,jsx,tsx,mdx}",
 	],
 	theme: {
@@ -40,5 +42,5 @@ export default {
 			display: ["group-hover"],
 		},
 	},
-	plugins: [],
+	plugins: [typography],
 } satisfies Config;

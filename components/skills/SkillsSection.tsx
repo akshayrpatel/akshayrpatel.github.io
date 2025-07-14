@@ -1,6 +1,6 @@
 import SectionNav from "./SectionNav";
 import { FC } from "react";
-import { skillCategories } from "./SkillsData";
+import { categorizedSkillsArray as skillCategories } from "@/data";
 
 const SkillsSection: FC = () => {
 	return (
@@ -16,7 +16,7 @@ const SkillsSection: FC = () => {
 					</h2>
 					<p className="mb-7 max-w-2xl mx-auto text-base sm:text-lg md:text-xl text-center font-subheading text-slate-600">
 						Explore my toolkit of technical skills, hands-on projects, and
-						academic journey-all in one place.
+						academic journey - all in one place.
 					</p>
 				</div>
 
@@ -29,37 +29,41 @@ const SkillsSection: FC = () => {
 						From programming languages and frameworks to cloud and design tools,
 						here are the technologies I use to turn ideas into reality.
 					</p>
-					<div className="overflow-x-auto">
-						<div className="grid grid-cols-2 min-w-xs md:grid-cols-4 gap-6 sm:gap-8">
-							{skillCategories.map((cat) => (
-								<div key={cat.title}>
-									<h4 className="mb-2 text-md sm:text-xl text-center font-subheading font-semibold text-slate-700">
-										{cat.title}
-									</h4>
-									<ul className="flex flex-col gap-2 sm:gap-3 items-center">
-										{cat.skills.map(({ name, icon: Icon, color }) => (
-											<li
-												key={name}
-												className="flex items-center gap-2 sm:gap-3 min-w-[120px] sm:min-w-[140px]"
-											>
-												{Icon ? (
-													<span
-														className={`flex items-center justify-center w-7 h-7 sm:w-8 sm:h-8 text-xl sm:text-2xl ${color}`}
-													>
-														<Icon />
-													</span>
-												) : (
-													<span className="w-7 h-7 sm:w-8 sm:h-8" />
-												)}
-												<span className="text-sm sm:text-base font-code text-slate-700">
-													{name}
+					{/* Main container for all skill categories */}
+					<div className="flex flex-col gap-6 sm:gap-8">
+						{" "}
+						{/* Adjusted gap between categories */}
+						{skillCategories.map((cat) => (
+							<div
+								key={cat.title}
+								className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 pb-6 border-b border-sky-100 last:border-b-0"
+							>
+								{/* Category Title (Left Column) */}
+								<h4 className="w-full sm:w-1/4 text-lg sm:text-xl font-heading font-semibold text-sky-800 text-center sm:text-left shrink-0">
+									{cat.title}
+								</h4>
+								{/* Skills List (Right Column) - now without background boxes */}
+								<ul className="flex flex-wrap justify-center sm:justify-start gap-4 sm:gap-6 w-full sm:w-3/4">
+									{cat.skills.map(({ name, icon: Icon, color }) => (
+										<li
+											key={name}
+											className="flex items-center gap-2 sm:gap-3 px-3 py-1.5 rounded-full text-sm sm:text-base font-code text-slate-700 whitespace-nowrap" // Adjusted for no background box
+										>
+											{Icon ? (
+												<span
+													className={`flex items-center justify-center w-6 h-6 sm:w-7 sm:h-7 text-xl sm:text-2xl ${color}`} // Smaller icons for less prominence
+												>
+													<Icon />
 												</span>
-											</li>
-										))}
-									</ul>
-								</div>
-							))}
-						</div>
+											) : (
+												<span className="w-6 h-6 sm:w-7 sm:h-7" />
+											)}
+											{name}
+										</li>
+									))}
+								</ul>
+							</div>
+						))}
 					</div>
 				</div>
 				<SectionNav />

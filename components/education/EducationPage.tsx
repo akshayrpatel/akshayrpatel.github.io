@@ -1,10 +1,12 @@
-import React, { useState, useRef, useEffect } from "react";
-import { BackHomeButton } from "../utils";
-import { education, educationCategories, EducationItem } from "./EducationData";
+import { useState, useRef, useEffect, FC } from "react";
 import { GoDotFill } from "react-icons/go";
 import { FaChevronDown } from "react-icons/fa";
 
-const EducationPage: React.FC = () => {
+import { BackHomeButton } from "../utils";
+import { education, educationCategories } from "@/data";
+import { EducationItem } from "@/types";
+
+const EducationPage: FC = () => {
 	const [search, setSearch] = useState<string>("");
 	const [filterType, setFilterType] = useState<string>("All");
 	const [open, setOpen] = useState<boolean>(false);
@@ -169,7 +171,9 @@ const EducationPage: React.FC = () => {
 									>
 										{item.institution}
 										{" | "}
-										<span className="font-normal">{item.year}</span>
+										<span className="font-normal">
+											{item.session || item.year}
+										</span>
 									</div>
 								</div>
 							</div>

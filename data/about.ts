@@ -13,22 +13,8 @@ import {
 import { GiCookingPot, GiGearStickPattern } from "react-icons/gi";
 import { MdSportsCricket } from "react-icons/md";
 import { SiOpenai } from "react-icons/si";
-import { FC } from "react";
 
-// Type definitions
-type TechInterest = {
-	icon: FC<{ className?: string }>;
-	label: string;
-	color: string;
-	desc: string;
-};
-
-type LifeInterest = {
-	icon: FC<{ className?: string }>;
-	label: string;
-	color: string;
-	desc: string;
-};
+import { TechInterest, LifeInterest } from "@/types";
 
 export const techInterests: TechInterest[] = [
 	{

@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import Contacts from "../contact/Contacts";
 import { getSectionImage } from "../utils";
 
@@ -6,7 +6,7 @@ const Landing: FC = () => (
 	<section className="flex flex-col w-full h-[100dvh] px-4 sm:px-6 md:px-8 items-center justify-center bg-white">
 		<div className="flex flex-col w-full max-w-4xl mx-auto items-center gap-16">
 			<div className="w-full max-w-2xl h-auto rounded-md overflow-hidden bg-white animate__animated animate__fadeInDown">
-				{getSectionImage("/images/projects/coder.png")}
+				{getSectionImage("/images/sections/coder.png")}
 			</div>
 
 			<div className="flex flex-col w-full gap-3 items-center max-w-2xl animate__animated animate__fadeInUp">

@@ -8,7 +8,6 @@ import {
 	FaCogs,
 	FaChartBar,
 	FaSitemap,
-	FaCode,
 	FaUserTie,
 	FaBusinessTime,
 	FaTools,
@@ -18,30 +17,29 @@ import {
 	FaKey,
 	FaChartLine,
 } from "react-icons/fa";
+import { MdOutlineFunctions } from "react-icons/md";
 import {
-	MdOutlineWeb,
-	MdOutlineScience,
-	MdOutlineFunctions,
-} from "react-icons/md";
-import type { IconType } from "react-icons";
+	FaMicrochip,
+	FaSuperscript,
+	FaUserGraduate,
+	FaBolt,
+	FaBookOpen,
+} from "react-icons/fa";
+import { MdFunctions, MdOutlineCalculate } from "react-icons/md";
+import { GiMaterialsScience, GiChemicalDrop } from "react-icons/gi";
+import { RiLightbulbFlashLine } from "react-icons/ri";
+import { BsGraphUp, BsGraphDown } from "react-icons/bs";
+import { TbMathFunction } from "react-icons/tb";
 
-// TypeScript type for an education item
-export type EducationItem = {
-	type: string;
-	title: string;
-	institution: string;
-	year: string;
-	icon: IconType;
-	color: string;
-	description: string;
-};
+import { EducationItem } from "@/types";
 
-const yorkUCourses = [
+const yorkUCourses: EducationItem[] = [
 	{
 		type: "course",
 		title: "Advanced Data Structures",
 		institution: "York University",
-		year: "2019",
+		year: "2018",
+		session: "FW-2018",
 		icon: FaLayerGroup,
 		color: "#0ea5e9",
 		description:
@@ -52,6 +50,7 @@ const yorkUCourses = [
 		title: "Analysis of Algorithms",
 		institution: "York University",
 		year: "2018",
+		session: "FW-2018",
 		icon: FaProjectDiagram,
 		color: "#6366f1",
 		description:
@@ -62,6 +61,7 @@ const yorkUCourses = [
 		title: "Applied Cryptography",
 		institution: "York University",
 		year: "2018",
+		session: "FW-2018",
 		icon: FaKey,
 		color: "#f59e42",
 		description:
@@ -71,7 +71,8 @@ const yorkUCourses = [
 		type: "course",
 		title: "Big Data Systems",
 		institution: "York University",
-		year: "2019",
+		year: "2018",
+		session: "FW-2018",
 		icon: FaDatabase,
 		color: "#0f766e",
 		description:
@@ -81,7 +82,8 @@ const yorkUCourses = [
 		type: "course",
 		title: "Building E-Commerce Systems",
 		institution: "York University",
-		year: "2019",
+		year: "2017",
+		session: "FW-2017",
 		icon: FaGlobe,
 		color: "#f59e42",
 		description:
@@ -91,7 +93,8 @@ const yorkUCourses = [
 		type: "course",
 		title: "Business Essentials for Tech Entrepreneurs I",
 		institution: "York University",
-		year: "2019",
+		year: "2018",
+		session: "FW-2018",
 		icon: FaBusinessTime,
 		color: "#eab308",
 		description:
@@ -101,7 +104,8 @@ const yorkUCourses = [
 		type: "course",
 		title: "Computational Thinking",
 		institution: "York University",
-		year: "2014",
+		year: "2015",
+		session: "FW-2015",
 		icon: FaRobot,
 		color: "#f472b6",
 		description:
@@ -109,9 +113,10 @@ const yorkUCourses = [
 	},
 	{
 		type: "course",
-		title: "Computer Networks and Applications",
+		title: "Computer Network Protocols and Applications",
 		institution: "York University",
 		year: "2018",
+		session: "FW-2018",
 		icon: FaNetworkWired,
 		color: "#0ea5e9",
 		description:
@@ -121,7 +126,8 @@ const yorkUCourses = [
 		type: "course",
 		title: "Computer Organization & Architecture",
 		institution: "York University",
-		year: "2017",
+		year: "2015",
+		session: "FW-2015",
 		icon: FaCogs,
 		color: "#a3e635",
 		description:
@@ -131,7 +137,8 @@ const yorkUCourses = [
 		type: "course",
 		title: "Data Mining",
 		institution: "York University",
-		year: "2019",
+		year: "2017",
+		session: "FW-2017",
 		icon: FaChartBar,
 		color: "#f59e42",
 		description:
@@ -139,9 +146,10 @@ const yorkUCourses = [
 	},
 	{
 		type: "course",
-		title: "Data Structures",
+		title: "Fundamentals of Data Structures",
 		institution: "York University",
-		year: "2014",
+		year: "2015",
+		session: "FW-2015",
 		icon: FaSitemap,
 		color: "#6366f1",
 		description:
@@ -152,6 +160,7 @@ const yorkUCourses = [
 		title: "Database Management Systems",
 		institution: "York University",
 		year: "2017",
+		session: "FW-2017",
 		icon: FaDatabase,
 		color: "#0f766e",
 		description:
@@ -159,9 +168,10 @@ const yorkUCourses = [
 	},
 	{
 		type: "course",
-		title: "Discrete Structures",
+		title: "Introduction to Logic for Computer Science",
 		institution: "York University",
-		year: "2014",
+		year: "2015",
+		session: "SU-2015",
 		icon: MdOutlineFunctions,
 		color: "#f472b6",
 		description:
@@ -171,7 +181,8 @@ const yorkUCourses = [
 		type: "course",
 		title: "Engineering Mechanics",
 		institution: "York University",
-		year: "2014",
+		year: "2015",
+		session: "FW-2015",
 		icon: FaTools,
 		color: "#f59e42",
 		description:
@@ -181,7 +192,8 @@ const yorkUCourses = [
 		type: "course",
 		title: "Engineering Statistics",
 		institution: "York University",
-		year: "2017",
+		year: "2015",
+		session: "FW-2015",
 		icon: FaChartLine,
 		color: "#3b82f6",
 		description:
@@ -191,7 +203,8 @@ const yorkUCourses = [
 		type: "course",
 		title: "Introduction to Computer Security",
 		institution: "York University",
-		year: "2019",
+		year: "2017",
+		session: "FW-2017",
 		icon: FaLock,
 		color: "#f87171",
 		description:
@@ -201,7 +214,8 @@ const yorkUCourses = [
 		type: "course",
 		title: "Professional Practice in Computing",
 		institution: "York University",
-		year: "2018",
+		year: "2017",
+		session: "FW-2017",
 		icon: FaUserTie,
 		color: "#6366f1",
 		description:
@@ -211,7 +225,8 @@ const yorkUCourses = [
 		type: "course",
 		title: "Software Design",
 		institution: "York University",
-		year: "2018",
+		year: "2017",
+		session: "FW-2017",
 		icon: FaLaptopCode,
 		color: "#0ea5e9",
 		description:
@@ -221,7 +236,8 @@ const yorkUCourses = [
 		type: "course",
 		title: "Software Tools",
 		institution: "York University",
-		year: "2014",
+		year: "2015",
+		session: "SU-2015",
 		icon: FaTools,
 		color: "#a3e635",
 		description:
@@ -229,37 +245,205 @@ const yorkUCourses = [
 	},
 	{
 		type: "course",
-		title: "Structured Programming Approach",
+		title: "Operating System Fundamentals",
 		institution: "York University",
-		year: "2014",
-		icon: FaCode,
+		year: "2018",
+		session: "FW-2018",
+		icon: FaMicrochip,
 		color: "#6366f1",
 		description:
-			"Teaches structured programming concepts using a high-level language, emphasizing modularity, control structures, and problem-solving.",
+			"Covers fundamental concepts and principles of operating systems, including process management, memory management, file systems, and concurrency.",
 	},
 	{
 		type: "course",
-		title: "The Complete Web Developer Course",
+		title: "Bus Essentials for Tech Entrepreneurs II",
 		institution: "York University",
-		year: "2017",
-		icon: MdOutlineWeb,
-		color: "#0ea5e9",
+		year: "2018",
+		session: "FW-2018",
+		icon: FaBusinessTime,
+		color: "#eab308",
 		description:
-			"Comprehensive course covering web development fundamentals, including HTML, CSS, JavaScript, and backend technologies.",
+			"Continues foundational business knowledge for aspiring tech entrepreneurs, focusing on advanced strategies, funding, and growth.",
 	},
 	{
 		type: "course",
-		title: "Theoretical Computer Science",
+		title: "Elementary Probability",
+		institution: "York University",
+		year: "2018",
+		session: "FW-2018",
+		icon: MdOutlineCalculate,
+		color: "#3b82f6",
+		description:
+			"Introduces basic concepts of probability, including random variables, probability distributions, and statistical inference.",
+	},
+	{
+		type: "course",
+		title: "Machine Learning and Pattern Recognition",
 		institution: "York University",
 		year: "2017",
-		icon: MdOutlineScience,
+		session: "FW-2017",
+		icon: FaRobot,
 		color: "#f472b6",
 		description:
-			"Explores theoretical foundations of computer science, including automata theory, formal languages, and computational complexity.",
+			"Explores techniques for machine learning and pattern recognition, including supervised and unsupervised learning, neural networks, and deep learning.",
+	},
+	{
+		type: "course",
+		title: "Renaissance Engineer 1:",
+		institution: "York University",
+		year: "2015",
+		session: "FW-2015",
+		icon: FaUserGraduate,
+		color: "#6366f1",
+		description:
+			"First part of a series focusing on foundational engineering concepts and principles for holistic development.",
+	},
+	{
+		type: "course",
+		title: "Renaissance Engineer 2: Design Principles",
+		institution: "York University",
+		year: "2015",
+		session: "FW-2015",
+		icon: FaProjectDiagram,
+		color: "#0ea5e9",
+		description:
+			"Second part of the Renaissance Engineer series, emphasizing engineering design methodologies and principles.",
+	},
+	{
+		type: "course",
+		title: "Chemistry and Materials Science",
+		institution: "York University",
+		year: "2015",
+		session: "FW-2015",
+		icon: GiMaterialsScience,
+		color: "#f59e42",
+		description:
+			"Covers fundamental principles of chemistry and their application to materials science, including properties and behavior of materials.",
+	},
+	{
+		type: "course",
+		title: "Applied Multivariate & Vector Calculus",
+		institution: "York University",
+		year: "2015",
+		session: "FW-2015",
+		icon: TbMathFunction,
+		color: "#6366f1",
+		description:
+			"Explores advanced calculus concepts, including multivariate functions, vector fields, and their applications in engineering and science.",
+	},
+	{
+		type: "course",
+		title: "Electricity, Magnetism & Optics for Engineers",
+		institution: "York University",
+		year: "2015",
+		session: "FW-2015",
+		icon: FaBolt,
+		color: "#f87171",
+		description:
+			"Covers principles of electricity, magnetism, and optics relevant to engineering applications.",
+	},
+	{
+		type: "course",
+		title: "Introduction to Microeconomics",
+		institution: "York University",
+		year: "2015",
+		session: "SU-2015",
+		icon: BsGraphDown,
+		color: "#0ea5e9",
+		description:
+			"Introduces fundamental principles of microeconomics, including supply and demand, market structures, and consumer behavior.",
+	},
+	{
+		type: "course",
+		title: "Introduction to Macroeconomics",
+		institution: "York University",
+		year: "2014",
+		session: "FW-2014",
+		icon: BsGraphUp,
+		color: "#0ea5e9",
+		description:
+			"Explores fundamental principles of macroeconomics, including national income, inflation, unemployment, and government policy.",
+	},
+	{
+		type: "course",
+		title: "Research Directions in Computing",
+		institution: "York University",
+		year: "2014",
+		session: "FW-2014",
+		icon: RiLightbulbFlashLine,
+		color: "#6366f1",
+		description:
+			"Provides an overview of current research areas and emerging trends in computer science.",
+	},
+	{
+		type: "course",
+		title: "Introduction to Computer Science I",
+		institution: "York University",
+		year: "2014",
+		session: "FW-2014",
+		icon: FaBookOpen,
+		color: "#6366f1",
+		description:
+			"First part of an introductory series to computer science, covering basic programming concepts and problem-solving.",
+	},
+	{
+		type: "course",
+		title: "Introduction to Computer Science II",
+		institution: "York University",
+		year: "2014",
+		session: "FW-2014",
+		icon: FaBookOpen,
+		color: "#6366f1",
+		description:
+			"Second part of an introductory series to computer science, building upon basic programming and introducing more complex data structures and algorithms.",
+	},
+	{
+		type: "course",
+		title: "Chemical Dynamics",
+		institution: "York University",
+		year: "2014",
+		session: "FW-2014",
+		icon: GiChemicalDrop,
+		color: "#f59e42",
+		description:
+			"Studies the rates and mechanisms of chemical reactions, including factors influencing reaction speed and energy changes.",
+	},
+	{
+		type: "course",
+		title: "Applied Calculus I",
+		institution: "York University",
+		year: "2014",
+		session: "FW-2014",
+		icon: MdFunctions,
+		color: "#6366f1",
+		description:
+			"Introduces fundamental concepts of differential and integral calculus with applications in various fields.",
+	},
+	{
+		type: "course",
+		title: "Applied Calculus II",
+		institution: "York University",
+		year: "2014",
+		session: "FW-2014",
+		icon: MdFunctions,
+		color: "#6366f1",
+		description:
+			"Continues the study of integral calculus, including techniques of integration, sequences, and series, with practical applications.",
+	},
+	{
+		type: "course",
+		title: "Applied Linear Algebra",
+		institution: "York University",
+		year: "2014",
+		session: "FW-2014",
+		icon: FaSuperscript,
+		color: "#6366f1",
+		description:
+			"Covers concepts of linear algebra, including vectors, matrices, systems of linear equations, and eigenvalues, with applications in science and engineering.",
 	},
 ];
 
-const certifications = [
+const certifications: EducationItem[] = [
 	{
 		type: "certification",
 		title: "Fine Tuning Large Language Models",
@@ -312,7 +496,7 @@ const certifications = [
 	},
 ];
 
-const yorkUDegree = [
+const yorkUDegree: EducationItem[] = [
 	{
 		type: "degree",
 		title: "B.Sc. in Computer Science",

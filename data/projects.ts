@@ -1,6 +1,8 @@
-const projects = [
+import { ProjectItem } from "@/types/project"; // Adjust path if your ProjectItem is in a different file
+
+export const projects: ProjectItem[] = [
 	{
-		name: "Shortly",
+		title: "Shortly",
 		image: "/images/projects/shortly.png",
 		description: "A tool to shorten long URLs and share them easily.",
 		technologies: ["Node.js", "React", "TypeScript"],
@@ -9,7 +11,7 @@ const projects = [
 		category: "Web App",
 	},
 	{
-		name: "Shortly REST API",
+		title: "Shortly REST API",
 		image: "/images/projects/shortly.png",
 		description:
 			"A REST API service that allows users to create, and share short urls.",
@@ -18,7 +20,7 @@ const projects = [
 		category: "Web App",
 	},
 	{
-		name: "Portfolio Website",
+		title: "Portfolio Website",
 		image: "/images/projects/coder.png",
 		description:
 			"A personal portfolio website showcasing my work, skills, and projects.",
@@ -28,7 +30,7 @@ const projects = [
 		category: "Web App",
 	},
 	{
-		name: "Jarvis",
+		title: "Jarvis",
 		image: "/images/projects/jarvis-brain.png",
 		description:
 			"Currently training a large language model to be able to answer questions pertaining to myself!",
@@ -36,7 +38,7 @@ const projects = [
 		category: "AI/ML",
 	},
 	{
-		name: "Resume.AI",
+		title: "Resume.AI",
 		image: "/images/projects/resume-ai.png",
 		description:
 			"Developing a multi-agent AI system that streamlines job applications for engineers, featuring AI-driven resume optimization, automated cover letter generation, and personalized interview preparation.",
@@ -44,7 +46,7 @@ const projects = [
 		category: "AI/ML",
 	},
 	{
-		name: "Bookstore",
+		title: "Bookstore",
 		image: "/images/projects/work.png",
 		description:
 			"A simple bookstore application built using Java EE, Apache Derby, Apache Tomcat, Apache Axis, and Jersey.",
@@ -53,7 +55,7 @@ const projects = [
 		category: "Web App",
 	},
 	{
-		name: "Curve Fitting",
+		title: "Curve Fitting",
 		image: "/images/projects/work.png",
 		description:
 			"Modeled a supervised learner using linear regression with risk minimization techniques to illustrate the concept of overfitting (a doomed learner) using graphs.",
@@ -62,7 +64,7 @@ const projects = [
 		category: "AI/ML",
 	},
 	{
-		name: "Web Page Classification",
+		title: "Web Page Classification",
 		image: "/images/projects/work.png",
 		description:
 			"Built a classification learning model to classify web pages into categories by extracting words from a source of hand classified web page.",
@@ -70,7 +72,7 @@ const projects = [
 		category: "AI/ML",
 	},
 	{
-		name: "YU Assist",
+		title: "YU Assist",
 		image: "/images/projects/yu-assist.png",
 		description:
 			"An app on the google assistant to help York University students find information like GPA, courses enrolled, etc. quickly using voice-recognition.",
@@ -79,7 +81,7 @@ const projects = [
 		category: "AI/ML",
 	},
 	{
-		name: "Twitter Sentiment Analysis",
+		title: "Twitter Sentiment Analysis",
 		image: "/images/projects/work.png",
 		description:
 			"A real time sentiment analysis big data pipeline of top trending topics on Twitter using Apache Spark and HDFS.",
@@ -87,7 +89,7 @@ const projects = [
 		category: "AI/ML",
 	},
 	{
-		name: "Memory Swipe",
+		title: "Memory Swipe",
 		image: "/images/projects/memory-swipe.png",
 		description:
 			"A simple card swipe memory game built end-to-end completely using prompts with bolt.new",
@@ -97,7 +99,7 @@ const projects = [
 		category: "Games",
 	},
 	{
-		name: "Pair it!",
+		title: "Pair it!",
 		image: "/images/projects/pair-it.png",
 		description:
 			"A simple card pairing game built end-to-end completely using prompts with bolt.new",
@@ -108,9 +110,7 @@ const projects = [
 	},
 ];
 
-const categories = [
+export const projectCategories = [
 	"All",
 	...Array.from(new Set(projects.map((p) => p.category))),
 ];
-
-export { projects, categories };

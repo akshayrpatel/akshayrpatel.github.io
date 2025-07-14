@@ -1,4 +1,6 @@
-const experiences = [
+import { ExperienceItem } from "@/types";
+
+export const experiences: ExperienceItem[] = [
 	{
 		company: "Veeva Systems",
 		duration: "May 2022 – Present",
@@ -51,5 +53,3 @@ const experiences = [
 		],
 	},
 ];
-
-export { experiences };

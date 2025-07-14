@@ -1,10 +1,6 @@
 import { Typewriter } from "react-simple-typewriter";
 import { FC } from "react";
-import {
-	typewriterWords,
-	techInterests,
-	lifeInterests,
-} from "./AboutSectionData";
+import { typewriterWords, techInterests, lifeInterests } from "@/data";
 
 const AboutSection: FC = () => (
 	<section className="flex w-full py-32 px-2 sm:px-4 md:px-8 items-center bg-gradient-to-br from-blue-50 via-sky-100 to-slate-100">

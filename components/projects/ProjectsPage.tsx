@@ -1,11 +1,12 @@
-import { useState, useRef } from "react";
+import { useState, useRef, FC } from "react";
 import { FaGithub, FaExternalLinkAlt, FaChevronDown } from "react-icons/fa";
 import { BackHomeButton } from "../utils";
-import { projects, categories } from "./ProjectData";
 import { getProjectImage, getSkillIcon } from "../utils";
 import { GoDotFill } from "react-icons/go";
+import { ProjectItem } from "@/types";
+import { projects, projectCategories } from "@/data";
 
-const ProjectsPage = () => {
+const ProjectsPage: FC = () => {
 	const [search, setSearch] = useState("");
 	const [category, setCategory] = useState("All");
 
@@ -13,10 +14,10 @@ const ProjectsPage = () => {
 	const buttonRef = useRef<HTMLButtonElement>(null);
 	const listRef = useRef<HTMLUListElement>(null);
 
-	const filteredProjects = projects.filter(
+	const filteredProjects: ProjectItem[] = projects.filter(
 		(p) =>
 			(category === "All" || p.category === category) &&
-			(p.name.toLowerCase().includes(search.toLowerCase()) ||
+			(p.title.toLowerCase().includes(search.toLowerCase()) ||
 				p.technologies.some((t) =>
 					t.toLowerCase().includes(search.toLowerCase())
 				))
@@ -73,7 +74,7 @@ const ProjectsPage = () => {
 							aria-activedescendant={category}
 							ref={listRef}
 						>
-							{categories.map((cat) => (
+							{projectCategories.map((cat) => (
 								<li
 									key={cat}
 									role="option"
@@ -124,7 +125,7 @@ const ProjectsPage = () => {
 						</div>
 						{/* Name */}
 						<h3 className="mb-1 text-lg sm:text-xl font-heading font-bold text-sky-800">
-							{proj.name}
+							{proj.title}
 						</h3>
 						{/* Tech icons */}
 						<div className="flex flex-wrap mb-2 gap-2">

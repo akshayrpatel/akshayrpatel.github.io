@@ -21,9 +21,12 @@
 /build
 
 # specific
+/app/test
+/app/api/temp
 /components/sections/backup
 /components/todo.ts
 /components/trash
+/backup
 
 # misc
 .DS_Store

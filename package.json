@@ -26,11 +26,16 @@
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0",
     "react-idle-timer": "^5.7.2",
+    "react-markdown": "^10.1.0",
     "react-simple-typewriter": "^5.0.1",
-    "react-vertical-timeline-component": "^3.5.3"
+    "react-vertical-timeline-component": "^3.5.3",
+    "remark-breaks": "^4.0.0",
+    "remark-gfm": "^4.0.1",
+    "server-only": "^0.0.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@tailwindcss/typography": "^0.5.16",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",

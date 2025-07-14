@@ -1,8 +1,9 @@
+import { FC } from "react";
 import { FaBriefcase } from "react-icons/fa6";
 import { BackHomeButton } from "../utils";
-import { experiences } from "./experienceData";
+import { experiences } from "@/data";
 
-const ExperiencePage = () => {
+const ExperiencePage: FC = () => {
 	return (
 		<section className="flex w-full min-h-screen py-8 items-center bg-gradient-to-br from-slate-100 via-slate-200 to-slate-300">
 			<div className="flex flex-col w-full max-w-4xl mx-auto px-3 sm:px-6 md:px-10 py-8 sm:py-12 items-center justify-center animate__animated animate__fadeInUp">
