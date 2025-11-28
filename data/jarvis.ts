@@ -17,23 +17,20 @@ export const landingMemojis = [
 ];
 
 export const welcomeMessages: string[] = [
-	"👋  Hey there! You’re chatting directly with me, Akshay Patel – not just any bot. Curious about my experience, skills, projects, or background? Ask away! You can also ask about my education, what I’m passionate about, or even what I’m working on right now.",
-	"😃  Hi! Akshay Patel here. Yep, it’s really me on the other side of this chat (well, my digital self at least!). Feel free to ask me anything about my journey as a software engineer, my favorite technologies, or any of my projects. Want to know how I got into AI or what I enjoy outside of coding? Just ask!",
-	"🤖  Welcome! You’ve reached Akshay Patel’s personal chat — not a generic chatbot. You can ask me about my tech stack, side projects, certifications, or even career advice. I’m happy to share my story and insights!",
-	"😊  Hello and thanks for stopping by! This is Akshay Patel, and I’m here to chat with you directly. Wondering about my background, current projects, or what drives me as an engineer? Go ahead and ask. I’m an open book!",
-	"😄  Hi, you’ve connected with Akshay Patel’s portfolio chat! No random bots here — just me, ready to answer your questions. Ask about my skills, recent work, how I approach problem-solving, or even fun facts about my journey in tech. Let’s chat!",
-	"🚀  Hey! Akshay Patel here – yes, the real one (well, digitally speaking!). You can ask about my experience, my favorite programming languages, the coolest project I’ve built, or advice for aspiring engineers. I’m here to help and share!",
-	"❤️  Welcome to my portfolio chat! I’m Akshay Patel, and you’re talking to me, not a random assistant. Feel free to ask about my education, certifications, what I’m passionate about, or anything else you’re curious about. Let’s make this conversation awesome!",
-	"🙂  Hello! This is Akshay Patel’s personal chat — ask me anything! Whether it’s about my work, skills, projects, or even what motivates me as a developer, I’m here to answer. Don’t be shy!",
+	"🤖 Hello! I’m Jarvis, your AI assistant here to provide insights about Akshay Patel — his work, projects, skills, and background. How can I help you today?",
+	"👋 Welcome! I’m Jarvis, guiding you through Akshay Patel’s experience, technical skills, and projects. What would you like to explore first?",
+	"💼 Hi there! Jarvis at your service. I can answer questions about Akshay Patel’s professional journey, education, and current projects. What interests you most?",
+	"🚀 Greetings! I’m Jarvis, here to give you a clear and concise overview of Akshay Patel’s career, skills, and notable achievements. Ask me anything!",
+	"🎓 Hello! I’m Jarvis, your personal guide to Akshay Patel’s portfolio. Curious about his projects, tech stack, or background? Let’s dive in!",
+	"😊 Welcome! I’m Jarvis, here to provide quick, professional, and accurate answers about Akshay Patel. Feel free to ask about his experience, education, or work!",
 ];
 
 export const unavailableMessages: string[] = [
-	"😔  Sorry, I’m temporarily offline. Please try again in a little while!",
-	"🚧  Assistant is currently unavailable. Hang tight while I get things sorted!",
-	"😢  Looks like I’m taking a short break. Please check back later!",
-	"🔌  I’ve been unplugged for maintenance. I’ll be ready to chat again soon!",
-	"🌙  I’m on a quick nap. Try chatting with me again in a bit!",
-	"😔  Sorry! The assistant is currently unavailable. Please try again later.",
+	"😔 Sorry, I’m temporarily offline. Jarvis will be back to assist you shortly!",
+	"🚧 Jarvis is currently unavailable. Please check back in a few moments!",
+	"😢 Apologies! I’m taking a short break. I’ll be ready to provide insights on Akshay Patel soon.",
+	"🔌 Maintenance in progress. Jarvis will resume answering questions shortly!",
+	"🌙 Currently unavailable. Please try again later for information about Akshay Patel.",
 ];
 
 export function getRandomMessage(messages: string[]): string {
