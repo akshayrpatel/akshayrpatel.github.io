@@ -87,7 +87,7 @@ jobs:
           echo NEXT_PUBLIC_CF_TOKEN=${{ secrets.NEXT_PUBLIC_CF_TOKEN }} >> .env
           echo NEXT_PUBLIC_APP_ID=${{ vars.APP_ID }} >> .env
           echo NEXT_PUBLIC_JARVIS_API_URL_CHAT=${{ vars.NEXT_PUBLIC_JARVIS_API_URL_CHAT }} >> .env
-          echo NEXT_PUBLIC_JARVIS_API_URL_LIMIT=${{ vars.NEXT_PUBLIC_JARVIS_API_URL_LIMIT }} >> .env
+          echo NEXT_PUBLIC_JARVIS_API_URL_CHAT_HEALTH=${{ vars.NEXT_PUBLIC_JARVIS_API_URL_CHAT_HEALTH }} >> .env
           ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

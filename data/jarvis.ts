@@ -36,7 +36,7 @@ export const unavailableMessages: string[] = [
 	"😔  Sorry! The assistant is currently unavailable. Please try again later.",
 ];
 
-export function getRandomWelcomeMessage(messages: string[]): string {
+export function getRandomMessage(messages: string[]): string {
 	const idx = Math.floor(Math.random() * messages.length);
 	return messages[idx];
 }

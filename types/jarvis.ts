@@ -8,6 +8,18 @@ export enum MessageSenderType {
 	USER = "user",
 	BOT = "bot",
 }
+
+export type ChatMessage = {
+	sender: MessageSenderType;
+	content: string;
+};
+
+export interface JarvisResponse {
+	answer: string;
+	session_id: string | null;
+	followups: string[];
+}
+
 export enum UIComponentType {
 	PROJECT = "projects",
 	CONTACT = "contact",
@@ -69,11 +81,6 @@ export type UIMessageContent =
 			data: string | null;
 			messageIntro?: string;
 	  };
-
-export type ChatMessage = {
-	sender: MessageSenderType; // Renamed 'type' to 'sender' for better semantics
-	content: string; // Content can be a string OR a UIMessageContent object
-};
 
 // A generic type for arguments of a tool function
 export interface ToolArgs {

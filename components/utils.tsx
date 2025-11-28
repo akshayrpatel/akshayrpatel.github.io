@@ -73,7 +73,7 @@ const getSectionCardImage = (imageSrc: string) => {
 	);
 };
 
-const getJarvisWelcomeImage = (imageSrc: string) => {
+const getJarvisWelcomeImage = (imageSrc: string | null) => {
 	return (
 		<img
 			className="lg:size-36 md:size-24 size-20 p-1 transition-transform duration-300 hover:scale-110"

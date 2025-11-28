@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
 import typography from "@tailwindcss/typography";
+import scrollbarHide from "tailwind-scrollbar-hide";
 
 export default {
 	content: [
@@ -42,5 +43,5 @@ export default {
 			display: ["group-hover"],
 		},
 	},
-	plugins: [typography],
+	plugins: [typography, scrollbarHide],
 } satisfies Config;

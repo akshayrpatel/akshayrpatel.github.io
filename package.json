@@ -31,7 +31,8 @@
     "react-vertical-timeline-component": "^3.5.3",
     "remark-breaks": "^4.0.0",
     "remark-gfm": "^4.0.1",
-    "server-only": "^0.0.1"
+    "server-only": "^0.0.1",
+    "tailwind-scrollbar-hide": "^4.0.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
