@@ -44,6 +44,7 @@ export const askJarvis = async (
 			return {
 				answer: getRandomMessage(unavailableMessages),
 				session_id: null,
+				followups: [],
 			};
 		}
 
@@ -65,6 +66,10 @@ export const askJarvis = async (
 		return await response.json();
 	} catch (e) {
 		console.log("Jarvis failed to answer: ", e);
-		return { answer: getRandomMessage(unavailableMessages), session_id: null };
+		return {
+			answer: getRandomMessage(unavailableMessages),
+			session_id: null,
+			followups: [],
+		};
 	}
 };
