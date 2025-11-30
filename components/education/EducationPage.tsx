@@ -75,6 +75,7 @@ const EducationPage: FC = () => {
 				{/* Search Bar */}
 				<div className="flex-1 flex items-center">
 					<input
+						id="education-search-input"
 						type="text"
 						placeholder="Search by title, institution, or year..."
 						value={search}

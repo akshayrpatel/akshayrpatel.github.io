@@ -141,14 +141,16 @@ const ProjectsPage: FC = () => {
 						</p>
 						{/* Links */}
 						<div className="flex mt-auto gap-3 font-outfit">
-							<a
-								href={proj.github}
-								target="_blank"
-								rel="noopener noreferrer"
-								className="inline-flex px-3 py-1.5 items-center gap-1 rounded-full bg-sky-50 hover:bg-sky-200 text-sky-700 transition"
-							>
-								<FaGithub /> GitHub
-							</a>
+							{proj.github && (
+								<a
+									href={proj.github}
+									target="_blank"
+									rel="noopener noreferrer"
+									className="inline-flex px-3 py-1.5 items-center gap-1 rounded-full bg-sky-50 hover:bg-sky-200 text-sky-700 transition"
+								>
+									<FaGithub /> GitHub
+								</a>
+							)}
 							{proj.live && (
 								<a
 									href={proj.live}

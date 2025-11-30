@@ -2,6 +2,41 @@ import { ProjectItem } from "@/types/project"; // Adjust path if your ProjectIte
 
 export const projects: ProjectItem[] = [
 	{
+		title: "Jarvis",
+		image: "/images/projects/jarvis-bot.png",
+		description:
+			"A personalized AI assistant powered by a large language model capable of answering questions about my background, experience, projects, skills etc.",
+		technologies: ["Python", "OpenAI", "React", "LangChain", "ChromaDB"],
+		category: "AI/ML",
+	},
+	{
+		title: "Jarvis ETL Pipeline",
+		image: "/images/projects/jarvis-etl.png",
+		description:
+			"A backend ingestion pipeline for my personal assistant, to process all documents that describe my work, projects, background, etc. that power semantic search on my portfolio.",
+		technologies: [
+			"Python",
+			"Redis",
+			"ChromaDB",
+			"Multi-Threading",
+			"Queues",
+			"Events",
+			"Embeddings",
+		],
+		github: "https://github.com/akshayrpatel/jarvis-etl",
+		category: "AI/ML",
+	},
+
+	{
+		title: "Jarvis Langchain Server",
+		image: "/images/projects/jarvis-server.png",
+		description:
+			"A dedicated backend service that orchestrates prompt routing, retrieval, tool use, and workflow logic for Jarvis.",
+		technologies: ["Python", "FastAPI", "LangChain", "OpenAI", "Render"],
+		github: "https://github.com/akshayrpatel/jarvis-langchain-server",
+		category: "AI/ML",
+	},
+	{
 		title: "Shortly",
 		image: "/images/projects/shortly.png",
 		description: "A tool to shorten long URLs and share them easily.",
@@ -29,22 +64,14 @@ export const projects: ProjectItem[] = [
 		live: "https://akshayrpatel.github.io",
 		category: "Web App",
 	},
-	{
-		title: "Jarvis",
-		image: "/images/projects/jarvis-brain.png",
-		description:
-			"Currently training a large language model to be able to answer questions pertaining to myself!",
-		technologies: ["Python", "Ollama", "HuggingFace"],
-		category: "AI/ML",
-	},
-	{
-		title: "Resume.AI",
-		image: "/images/projects/resume-ai.png",
-		description:
-			"Developing a multi-agent AI system that streamlines job applications for engineers, featuring AI-driven resume optimization, automated cover letter generation, and personalized interview preparation.",
-		technologies: ["Python", "Gemini", "Spring", "React"],
-		category: "AI/ML",
-	},
+	// {
+	// 	title: "Resume.AI",
+	// 	image: "/images/projects/resume-ai.png",
+	// 	description:
+	// 		"Developing a multi-agent AI system that streamlines job applications for engineers, featuring AI-driven resume optimization, automated cover letter generation, and personalized interview preparation.",
+	// 	technologies: ["Python", "Gemini", "Spring", "React"],
+	// 	category: "AI/ML",
+	// },
 	{
 		title: "Bookstore",
 		image: "/images/projects/work.png",

@@ -1,4 +1,3 @@
-// data/skills.ts
 import { BsFiletypeSql } from "react-icons/bs";
 import {
 	FaJava,
@@ -13,9 +12,11 @@ import {
 	FaDatabase,
 	FaAws,
 	FaRobot,
-	FaTwitter,
 } from "react-icons/fa";
 import {
+	SiFastapi,
+	SiRender,
+	SiRedis,
 	SiTypescript,
 	SiCplusplus,
 	SiSpring,
@@ -32,6 +33,9 @@ import {
 	SiApachetomcat,
 	SiEclipseide,
 	SiIntellijidea,
+	SiOpenai,
+	SiLangchain,
+	SiPydantic,
 } from "react-icons/si";
 import { VscAzure, VscVscode } from "react-icons/vsc";
 import { DiGoogleCloudPlatform } from "react-icons/di";
@@ -82,6 +86,7 @@ const allSkills: Skill[] = [
 
 	// Web
 	{ name: "Spring", icon: SiSpring, color: "text-green-700", category: "Web" },
+	{ name: "FastAPI", icon: SiFastapi, color: "text-teal-700", category: "Web" },
 	{ name: "Node.js", icon: FaNodeJs, color: "text-green-600", category: "Web" },
 	{ name: "HTML5", icon: FaHtml5, color: "text-orange-500", category: "Web" },
 	{ name: "CSS3", icon: FaCss3Alt, color: "text-blue-500", category: "Web" },
@@ -120,9 +125,27 @@ const allSkills: Skill[] = [
 		category: "Technologies",
 	},
 	{
+		name: "Redis",
+		icon: SiRedis,
+		color: "text-red-600",
+		category: "Technologies",
+	},
+	{
 		name: "Docker",
 		icon: FaDocker,
 		color: "text-blue-400",
+		category: "Technologies",
+	},
+	{
+		name: "Render",
+		icon: SiRender,
+		color: "text-black-700",
+		category: "Technologies",
+	},
+	{
+		name: "Pydantic",
+		icon: SiPydantic,
+		color: "text-pink-600",
 		category: "Technologies",
 	},
 	{
@@ -179,12 +202,6 @@ const allSkills: Skill[] = [
 		color: "text-yellow-400",
 		category: "Technologies",
 	},
-	{
-		name: "Twitter",
-		icon: FaTwitter,
-		color: "text-sky-400",
-		category: "Technologies",
-	},
 
 	// AI / ML
 	{
@@ -213,6 +230,12 @@ const allSkills: Skill[] = [
 	},
 	{ name: "Pandas", icon: SiPandas, color: "text-black", category: "AI / ML" },
 	{
+		name: "OpenAI",
+		icon: SiOpenai,
+		color: "text-emerald-600",
+		category: "AI / ML",
+	},
+	{
 		name: "Ollama",
 		icon: SiOllama,
 		color: "text-green-700",
@@ -234,6 +257,12 @@ const allSkills: Skill[] = [
 		name: "Transformers",
 		icon: FaRobot,
 		color: "text-purple-500",
+		category: "AI / ML",
+	},
+	{
+		name: "LangChain",
+		icon: SiLangchain,
+		color: "text-green-600",
 		category: "AI / ML",
 	},
 ];

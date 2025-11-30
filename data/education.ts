@@ -446,6 +446,36 @@ const yorkUCourses: EducationItem[] = [
 const certifications: EducationItem[] = [
 	{
 		type: "certification",
+		title: "LangChain: Chat with Your Data",
+		institution: "DeepLearning.AI",
+		year: "2025",
+		icon: FaCertificate,
+		color: "#f59e42",
+		description:
+			"Focuses on building retrieval-augmented generation (RAG) systems using LangChain, covering document loaders, embeddings, vector stores, retrievers, and conversational interfaces for querying custom datasets.",
+	},
+	{
+		type: "certification",
+		title: "Functions, Tools and Agents with LangChain",
+		institution: "DeepLearning.AI",
+		year: "2025",
+		icon: FaCertificate,
+		color: "#f59e42",
+		description:
+			"Explores how to enhance LLM capabilities with function calling, external tools, and autonomous agents, enabling advanced workflows such as reasoning, planning, and tool-augmented AI behavior.",
+	},
+	{
+		type: "certification",
+		title: "LangChain for LLM Application Development",
+		institution: "DeepLearning.AI",
+		year: "2025",
+		icon: FaCertificate,
+		color: "#f59e42",
+		description:
+			"Covers the core concepts of building LLM-powered applications with LangChain, including prompt templates, chains, memory, and integrations for creating reliable and scalable AI systems.",
+	},
+	{
+		type: "certification",
 		title: "Fine Tuning Large Language Models",
 		institution: "DeepLearning.AI",
 		year: "2024",

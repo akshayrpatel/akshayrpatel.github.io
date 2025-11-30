@@ -108,7 +108,7 @@ const Jarvis: FC = () => {
 
 	return (
 		<>
-			{!isChatModalOpen && apiStatus && (
+			{!isChatModalOpen && memoji && (
 				<ChatOptionIcon
 					toggleModal={toggleModal}
 					memoji={memoji}
