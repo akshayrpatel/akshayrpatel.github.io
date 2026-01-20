@@ -36,19 +36,12 @@ interface JarvisState {
 }
 
 export const useJarvisState = (): JarvisState => {
-	const defaultQuestions = [
-		"Can you tell me about Akshay's latest project?",
-		"What are Akshay's key skills?",
-		"Could you share Akshay's contact information?",
-		"Tell me about Akshay's educational background.",
-		"What's a fun fact about Akshay?",
-	];
 	const [apiStatus, setApiStatus] = useState(false);
 	const [isChatModalOpen, setIsChatModalOpen] = useState(false);
 	const [isThinking, setIsThinking] = useState(false);
 	const [showCloud, setShowCloud] = useState<boolean>(false);
 	const [showQuestions, setShowQuestions] = useState(false);
-	const [questions, setQuestions] = useState<string[]>(defaultQuestions);
+	const [questions, setQuestions] = useState<string[]>([]);
 	const [memoji, setMemoji] = useState<string | null>(null);
 	const [sessionId, setSessionId] = useState<string | null>(null);
 	const [userInput, setUserInput] = useState("");
@@ -56,6 +49,8 @@ export const useJarvisState = (): JarvisState => {
 
 	/** Initial api health check on mount */
 	useEffect(() => {
+		let interval: NodeJS.Timeout;
+
 		const fetchHealth = async () => {
 			const status = await checkJarvisHealth();
 			setApiStatus(status);
@@ -66,7 +61,17 @@ export const useJarvisState = (): JarvisState => {
 		};
 
 		fetchHealth();
-	}, []);
+
+		// Only retry periodically if API is offline
+		if (apiStatus === false) {
+			interval = setInterval(fetchHealth, 10000); // retry every 10s
+		}
+
+		// Cleanup on unmount
+		return () => {
+			if (interval) clearInterval(interval);
+		};
+	}, [apiStatus]);
 
 	/** Set intial state */
 	useEffect(() => {

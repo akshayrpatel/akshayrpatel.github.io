@@ -8,7 +8,7 @@ import {
 
 import ChatOptionIcon from "./ui/ChatOptionIcon";
 import ChatModal from "./ui/ChatModal";
-import { askJarvis, checkJarvisHealth, createChatMessage } from "./helper/chat";
+import { askJarvis, createChatMessage } from "./helper/chat";
 import { useJarvisState } from "./helper/useJarvisState";
 
 const Jarvis: FC = () => {
@@ -47,13 +47,13 @@ const Jarvis: FC = () => {
 		"What are Akshay's key skills?",
 		"Could you share Akshay's contact information?",
 		"Tell me about Akshay's educational background.",
-		"What's a fun fact about Akshay?",
 	];
 	const toggleModal = async () => {
 		if (!isChatModalOpen) {
-			const apiStatus = await checkJarvisHealth();
+			// const apiStatus = await checkJarvisHealth();
 			setApiStatus(apiStatus);
 			if (!apiStatus) {
+				setQuestions([]);
 				setMessages([
 					{
 						sender: MessageSenderType.BOT,
@@ -81,7 +81,7 @@ const Jarvis: FC = () => {
 
 		const userMessage: ChatMessage = createChatMessage(
 			MessageSenderType.USER,
-			userQuery
+			userQuery,
 		);
 
 		setMessages((prev) => [...prev, userMessage]);
@@ -100,7 +100,7 @@ const Jarvis: FC = () => {
 
 		const botMessage: ChatMessage = createChatMessage(
 			MessageSenderType.BOT,
-			data.answer
+			data.answer,
 		);
 		setMessages((prev) => [...prev, botMessage]);
 		setIsThinking(false);

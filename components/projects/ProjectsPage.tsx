@@ -1,5 +1,6 @@
 import { useState, useRef, FC } from "react";
 import { FaGithub, FaExternalLinkAlt, FaChevronDown } from "react-icons/fa";
+import { FaGitlab } from "react-icons/fa6";
 import { BackHomeButton } from "../utils";
 import { getProjectImage, getSkillIcon } from "../utils";
 import { GoDotFill } from "react-icons/go";
@@ -19,8 +20,8 @@ const ProjectsPage: FC = () => {
 			(category === "All" || p.category === category) &&
 			(p.title.toLowerCase().includes(search.toLowerCase()) ||
 				p.technologies.some((t) =>
-					t.toLowerCase().includes(search.toLowerCase())
-				))
+					t.toLowerCase().includes(search.toLowerCase()),
+				)),
 	);
 
 	return (
@@ -117,7 +118,7 @@ const ProjectsPage: FC = () => {
 				{filteredProjects.map((proj, i: number) => (
 					<div
 						key={i}
-						className="flex flex-col p-5 sm:p-6 rounded-2xl shadow-lg border border-sky-100 bg-white hover:shadow-xl transition animate__animated animate__fadeInUp"
+						className="flex flex-col p-5 sm:p-6 rounded-2xl shadow-lg border border-sky-100 bg-white hover:-translate-y-2 hover:shadow-xl transition animate__animated animate__fadeInUp"
 					>
 						{/* Image */}
 						<div className="flex w-full h-32 sm:h-36 mb-4 items-center justify-center rounded-xl bg-gradient-to-br from-sky-100 to-sky-200 overflow-hidden">
@@ -149,6 +150,16 @@ const ProjectsPage: FC = () => {
 									className="inline-flex px-3 py-1.5 items-center gap-1 rounded-full bg-sky-50 hover:bg-sky-200 text-sky-700 transition"
 								>
 									<FaGithub /> GitHub
+								</a>
+							)}
+							{proj.gitlab && (
+								<a
+									href={proj.gitlab}
+									target="_blank"
+									rel="noopener noreferrer"
+									className="inline-flex px-3 py-1.5 items-center gap-1 rounded-full bg-sky-50 hover:bg-sky-200 text-sky-700 transition"
+								>
+									<FaGitlab /> GitLab
 								</a>
 							)}
 							{proj.live && (

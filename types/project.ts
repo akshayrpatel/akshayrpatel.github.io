@@ -4,6 +4,7 @@ export interface ProjectItem {
 	description: string;
 	technologies: string[];
 	github?: string;
+	gitlab?: string;
 	live?: string;
 	category: string;
 }

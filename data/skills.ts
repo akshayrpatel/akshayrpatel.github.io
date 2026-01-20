@@ -22,7 +22,6 @@ import {
 	SiSpring,
 	SiNextdotjs,
 	SiTailwindcss,
-	SiMongodb,
 	SiApachekafka,
 	SiBulma,
 	SiPytorch,
@@ -31,17 +30,20 @@ import {
 	SiHuggingface,
 	SiOllama,
 	SiApachetomcat,
-	SiEclipseide,
+	SiApachemaven,
 	SiIntellijidea,
 	SiOpenai,
 	SiLangchain,
 	SiPydantic,
+	SiPycharm,
 } from "react-icons/si";
 import { VscAzure, VscVscode } from "react-icons/vsc";
 import { DiGoogleCloudPlatform } from "react-icons/di";
 import { IoLogoFirebase } from "react-icons/io5";
 import { RiGeminiFill } from "react-icons/ri";
 import { HiCube } from "react-icons/hi";
+import { BiLogoPostgresql } from "react-icons/bi";
+import { GrGraphQl } from "react-icons/gr";
 
 import { Skill } from "@/types/skill";
 
@@ -98,6 +100,13 @@ const allSkills: Skill[] = [
 		category: "Web",
 	},
 	{
+		name: "GraphQL",
+		icon: GrGraphQl,
+		color: "text-pink-500",
+		category: "Web",
+	},
+
+	{
 		name: "Tailwind",
 		icon: SiTailwindcss,
 		color: "text-cyan-500",
@@ -113,15 +122,21 @@ const allSkills: Skill[] = [
 		category: "Technologies",
 	},
 	{
-		name: "MongoDB",
-		icon: SiMongodb,
-		color: "text-green-700",
+		name: "Postgres",
+		icon: BiLogoPostgresql,
+		color: "text-[#4584B6]",
 		category: "Technologies",
 	},
 	{
 		name: "Kafka",
 		icon: SiApachekafka,
 		color: "text-black",
+		category: "Technologies",
+	},
+	{
+		name: "Maven",
+		icon: SiApachemaven,
+		color: "text-[#c22144]",
 		category: "Technologies",
 	},
 	{
@@ -161,6 +176,12 @@ const allSkills: Skill[] = [
 		category: "Technologies",
 	},
 	{
+		name: "PyCharm",
+		icon: SiPycharm,
+		color: "text-green-600",
+		category: "Technologies",
+	},
+	{
 		name: "VS Code",
 		icon: VscVscode,
 		color: "text-blue-500",
@@ -190,12 +211,12 @@ const allSkills: Skill[] = [
 		color: "text-yellow-500",
 		category: "Technologies",
 	},
-	{
-		name: "Eclipse",
-		icon: SiEclipseide,
-		color: "text-purple-800",
-		category: "Technologies",
-	},
+	// {
+	// 	name: "Eclipse",
+	// 	icon: SiEclipseide,
+	// 	color: "text-purple-800",
+	// 	category: "Technologies",
+	// },
 	{
 		name: "Firebase",
 		icon: IoLogoFirebase,
@@ -206,8 +227,8 @@ const allSkills: Skill[] = [
 	// AI / ML
 	{
 		name: "Cursor",
-		icon: HiCube, // Cube icon from Heroicons
-		color: "text-teal-500", // Teal is modern, techy, and fits Cursor's branding
+		icon: HiCube,
+		color: "text-teal-500",
 		category: "AI / ML",
 	},
 	{
@@ -242,12 +263,6 @@ const allSkills: Skill[] = [
 		category: "AI / ML",
 	},
 	{
-		name: "CrewAI",
-		icon: FaRobot,
-		color: "text-blue-700",
-		category: "AI / ML",
-	},
-	{
 		name: "HuggingFace",
 		icon: SiHuggingface,
 		color: "text-yellow-400",
@@ -267,7 +282,6 @@ const allSkills: Skill[] = [
 	},
 ];
 
-// If you still need a categorized structure for display purposes, you can derive it:
 type GroupedSkills = { [key: string]: Skill[] };
 
 const skillCategories = allSkills.reduce((acc: GroupedSkills, skill) => {
@@ -278,7 +292,6 @@ const skillCategories = allSkills.reduce((acc: GroupedSkills, skill) => {
 	return acc;
 }, {});
 
-// Convert to an array of objects if your Skills page expects that format:
 const categorizedSkillsArray = Object.keys(skillCategories).map((category) => ({
 	title: category,
 	skills: skillCategories[category],
@@ -311,6 +324,4 @@ const cards = [
 	},
 ];
 
-// Export allSkills for getSkillIcon, and optionally categorizedSkillsArray
-// if your Skills page needs it in that specific format.
 export { allSkills, categorizedSkillsArray, cards };

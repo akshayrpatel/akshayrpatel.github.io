@@ -7,6 +7,26 @@ export const projects: ProjectItem[] = [
 		description:
 			"A personalized AI assistant powered by a large language model capable of answering questions about my background, experience, projects, skills etc.",
 		technologies: ["Python", "OpenAI", "React", "LangChain", "ChromaDB"],
+		github: "https://github.com/akshayrpatel/jarvis-ai",
+		live: "https://engineer24.dev",
+		category: "AI/ML",
+	},
+	{
+		title: "MoodFlix",
+		image: "/images/projects/moodflix.png",
+		description:
+			"An AI-assisted discovery platform to recommend content based on user mood using a hybrid of semantic search and programmatic filtering.",
+		technologies: [
+			"Python",
+			"Ollama",
+			"ChromaDB",
+			"Next.js",
+			"React",
+			"TypeScript",
+			"Tailwind",
+		],
+		github: "https://github.com/akshayrpatel/moodflix",
+		live: "https://moodflix.engineer24.dev",
 		category: "AI/ML",
 	},
 	{
@@ -26,7 +46,6 @@ export const projects: ProjectItem[] = [
 		github: "https://github.com/akshayrpatel/jarvis-etl",
 		category: "AI/ML",
 	},
-
 	{
 		title: "Jarvis Langchain Server",
 		image: "/images/projects/jarvis-server.png",
@@ -34,6 +53,22 @@ export const projects: ProjectItem[] = [
 			"A dedicated backend service that orchestrates prompt routing, retrieval, tool use, and workflow logic for Jarvis.",
 		technologies: ["Python", "FastAPI", "LangChain", "OpenAI", "Render"],
 		github: "https://github.com/akshayrpatel/jarvis-langchain-server",
+		category: "AI/ML",
+	},
+	{
+		title: "GitLab MR Ingestor",
+		image: "/images/projects/jarvis-etl.png",
+		description:
+			"A resilient, multi-threaded data pipeline designed to ingest high-frequency data from GitLab’s GraphQL API into PostgreSQL for downstream analysis.",
+		technologies: [
+			"Python",
+			"Redis",
+			"Postgres",
+			"GraphQL",
+			"Multi-Threading",
+			"Queues",
+		],
+		gitlab: "https://gitlab.com/akshayrpatel/gitlab-mr-ingestor",
 		category: "AI/ML",
 	},
 	{
@@ -64,14 +99,26 @@ export const projects: ProjectItem[] = [
 		live: "https://akshayrpatel.github.io",
 		category: "Web App",
 	},
-	// {
-	// 	title: "Resume.AI",
-	// 	image: "/images/projects/resume-ai.png",
-	// 	description:
-	// 		"Developing a multi-agent AI system that streamlines job applications for engineers, featuring AI-driven resume optimization, automated cover letter generation, and personalized interview preparation.",
-	// 	technologies: ["Python", "Gemini", "Spring", "React"],
-	// 	category: "AI/ML",
-	// },
+	{
+		title: "Memory Swipe",
+		image: "/images/projects/memory-swipe.png",
+		description:
+			"A simple card swipe memory game built end-to-end completely using prompts with bolt.new",
+		technologies: ["Bolt.new", "React", "TypeScript", "Tailwind"],
+		github: "https://github.com/akshayrpatel/swipe",
+		live: "https://benevolent-malasada-a5c914.netlify.app/",
+		category: "Games",
+	},
+	{
+		title: "Pair it!",
+		image: "/images/projects/pair-it.png",
+		description:
+			"A simple card pairing game built end-to-end completely using prompts with bolt.new",
+		technologies: ["Bolt.new", "React", "TypeScript", "Tailwind"],
+		github: "https://github.com/akshayrpatel/pair-it",
+		live: "https://transcendent-stroopwafel-e65893.netlify.app/",
+		category: "Games",
+	},
 	{
 		title: "Bookstore",
 		image: "/images/projects/work.png",
@@ -114,26 +161,6 @@ export const projects: ProjectItem[] = [
 			"A real time sentiment analysis big data pipeline of top trending topics on Twitter using Apache Spark and HDFS.",
 		technologies: ["Twitter", "Python", "HDFS"],
 		category: "AI/ML",
-	},
-	{
-		title: "Memory Swipe",
-		image: "/images/projects/memory-swipe.png",
-		description:
-			"A simple card swipe memory game built end-to-end completely using prompts with bolt.new",
-		technologies: ["Bolt.new", "React", "TypeScript", "Tailwind"],
-		github: "https://github.com/akshayrpatel/swipe",
-		live: "https://benevolent-malasada-a5c914.netlify.app/",
-		category: "Games",
-	},
-	{
-		title: "Pair it!",
-		image: "/images/projects/pair-it.png",
-		description:
-			"A simple card pairing game built end-to-end completely using prompts with bolt.new",
-		technologies: ["Bolt.new", "React", "TypeScript", "Tailwind"],
-		github: "https://github.com/akshayrpatel/pair-it",
-		live: "https://transcendent-stroopwafel-e65893.netlify.app/",
-		category: "Games",
 	},
 ];
 

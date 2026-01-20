@@ -3,7 +3,7 @@ import { MessageSenderType, ChatMessage, JarvisResponse } from "@/types";
 
 export const createChatMessage = (
 	sender: MessageSenderType,
-	content: string
+	content: string,
 ): ChatMessage => {
 	return {
 		sender: sender,
@@ -34,7 +34,7 @@ export const checkJarvisHealth = async (): Promise<boolean> => {
 
 export const askJarvis = async (
 	query: string,
-	sessionId: string
+	sessionId: string,
 ): Promise<JarvisResponse> => {
 	try {
 		const jarvisApiUrlChat = process.env.NEXT_PUBLIC_JARVIS_API_URL_CHAT;
