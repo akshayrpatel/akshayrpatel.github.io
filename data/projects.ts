@@ -56,6 +56,24 @@ export const projects: ProjectItem[] = [
 		category: "AI/ML",
 	},
 	{
+		title: "MoodFlix Ingestion Pipeline",
+		image: "/images/projects/jarvis-etl.png",
+		description:
+			"A backend data ingestion pipeline for MoodFlix, an AI-assisted discovery platform, for search and recommendations.",
+		technologies: [
+			"Python",
+			"Redis",
+			"Postgres",
+			"ChromaDB",
+			"Multi-Threading",
+			"Queues",
+			"Events",
+			"Embeddings",
+		],
+		github: "https://github.com/akshayrpatel/moodflix-ingestion-pipeline",
+		category: "AI/ML",
+	},
+	{
 		title: "GitLab MR Ingestor",
 		image: "/images/projects/jarvis-etl.png",
 		description:
@@ -159,7 +177,7 @@ export const projects: ProjectItem[] = [
 		image: "/images/projects/work.png",
 		description:
 			"A real time sentiment analysis big data pipeline of top trending topics on Twitter using Apache Spark and HDFS.",
-		technologies: ["Twitter", "Python", "HDFS"],
+		technologies: ["Python", "Twitter", "HDFS"],
 		category: "AI/ML",
 	},
 ];
