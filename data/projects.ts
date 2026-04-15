@@ -2,6 +2,21 @@ import { ProjectItem } from "@/types/project"; // Adjust path if your ProjectIte
 
 export const projects: ProjectItem[] = [
 	{
+		title: "AskTandoor",
+		image: "/images/projects/project.png",
+		description:
+			"An SEO/AEO audit platform that runs grounded LLM queries against major AI engines to audit restaurant discoverability, detect structured data gaps, and identify crawlability failures.",
+		technologies: [
+			"TypeScript",
+			"Next.js",
+			"Gemini",
+			"Google Places API",
+			"Reddit",
+		],
+		live: "https://asktandoor.engineer24.dev/",
+		category: "AI/ML",
+	},
+	{
 		title: "Jarvis",
 		image: "/images/projects/jarvis-bot.png",
 		description:
